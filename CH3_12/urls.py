@@ -23,5 +23,15 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("search_list/",views.search_list),
     path("index/",views.index),
+    path("post/",views.post),
+    path("edit/<int:id>/",views.edit),
+    path("delete/<int:id>/",views.delete),
+    #######################################
+    # web api
+    path("getallitems/",views.getallitems),
+    path("getitem/<int:id>/",views.getitem),
+    path("createitem/",views.createitem),
+    path("updateitem/<int:id>/",views.updateitem),
+    path("deleteitem/<int:id>/",views.deleteitem),
 
 ]
